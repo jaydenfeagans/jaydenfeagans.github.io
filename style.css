@@ -123,13 +123,13 @@ h3 {
 
 }
 
-@media screen and (min-height: 580px) {
+@media screen and (min-height: 580px) and (max-height: 700px) {
     .container {
         grid-template-rows: 20% 300px auto;
     }
 
     footer {
-        line-height: 35px;
+        line-height: 30px;
         font-size: larger;
     }
 
