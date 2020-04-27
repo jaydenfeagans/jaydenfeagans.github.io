@@ -111,7 +111,7 @@ h3{
         background-color: #2d8dfd;
     }    
 }
-@media screen and (min-height: 750px) {
+@media screen and (min-height: 600px) {
     .container{
         grid-template-rows: 25% 370px auto;
     }
