@@ -111,3 +111,16 @@ h3{
         background-color: #2d8dfd;
     }    
 }
+@media screen and (min-height: 1050px) {
+    .container{
+        grid-template-rows: 25% 370px auto;
+    }
+    footer{
+        line-height: 35px;
+        font-size: larger;
+    }
+    .fbox{
+        background-color: black;
+        height: 100px;
+    }
+}
