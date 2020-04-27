@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     display: grid;
     grid-template-rows: 20% 370px auto;
     position: fixed;
@@ -12,21 +13,23 @@
     left: 0;
     right: 0;
 }
-header{
+
+header {
     display: flex;
     background-color: #2d8dfd;
     grid-row-start: 1;
     grid-row-end: 2;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;    
+    align-items: center;
 }
-h1{
+
+h1 {
     font-size: x-large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.box{
+.box {
     padding: 10px;
     text-align: center;
     width: 200px;
@@ -35,25 +38,27 @@ h1{
     border-width: 2px;
     border-color: white;
     border-radius: 10px;
-
     text-decoration: none;
     color: black;
     font-size: large;
-    
 }
-.box:hover{
+
+.box:hover {
     cursor: pointer;
     font-size: larger;
     font-weight: bolder;
     background-color: white;
     transition: all 500ms;
 }
-body{
-    background-image: url("HorseRider2.jpg"); /*found on https://www.inthesaddle.com/rides/pyrenean-adventures/*/
+
+body {
+    background-image: url("HorseRider2.jpg");
+    /*found on https://www.inthesaddle.com/rides/pyrenean-adventures/*/
     background-repeat: no-repeat;
     background-size: cover;
 }
-footer{
+
+footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -64,40 +69,44 @@ footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: smaller;
 }
-h2{
+
+h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: medium;
 }
-#fb{
+
+#fb {
     text-decoration: none;
     color: black;
 }
-#fb:hover{
+
+#fb:hover {
     font-size: x-large;
     font-weight: 2px;
     color: white;
 }
-p:hover{
+
+p:hover {
     font-size: x-large;
     font-weight: 2px;
     color: white;
 }
-h3{
+
+h3 {
     align-self: flex-end;
 }
+
 @media screen and (max-width: 1050px) {
-   
-    .container{
+    .container {
         grid-template-rows: 100%;
     }
-    header{
+    header {
         display: grid;
-        grid-template-rows: 25% 25% 25% 25%;   
+        grid-template-rows: 25% 25% 25% 25%;
         background-color: black;
         border: solid white 2px;
     }
-    
-     h1{
+    h1 {
         text-align: center;
         position: fixed;
         margin-top: 25%;
@@ -105,53 +114,70 @@ h3{
         background-color: #2d8dfd;
         border: solid white 1px;
     }
-    header a{
-        grid-row-start:3;
-        grid-row-end:4;
+
+    header a {
+        grid-row-start: 3;
+        grid-row-end: 4;
         background-color: #2d8dfd;
-    }    
+    }
+
 }
+
 @media screen and (min-height: 580px) {
-    .container{
+    .container {
         grid-template-rows: 20% 300px auto;
     }
-    footer{
+
+    footer {
         line-height: 40px;
         font-size: larger;
     }
-    .fbox{
+
+    .fbox {
         background-color: black;
         height: 100px;
     }
-    h3{
+
+    h3 {
         width: 100%;
         height: 100px;
         background-color: black;
         color: white;
         text-align: end;
+        bottom: 0;
+        position: fixed;
     }
+
 }
+
 @media screen and (min-height: 700px) {
-    .container{
+    .container {
         grid-template-rows: 20% 300px auto;
     }
-    footer{
+
+    footer {
         line-height: 50px;
         font-size: larger;
         padding-top: 50px;
     }
-    .fbox{
+
+    .fbox {
         background-color: black;
         height: 100px;
     }
-    h2{
+
+    h2 {
         font-size: larger;
     }
-    h3{
+
+    h3 {
         width: 100%;
         height: 100px;
         background-color: black;
         color: white;
         text-align: end;
+        bottom: 0;
+        position: fixed;
     }
+
 }
